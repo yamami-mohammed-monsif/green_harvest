@@ -19,3 +19,7 @@
 body {
   font-family: "Inter Tight", sans-serif;
 }
+
+h1 {
+  @apply text-5xl leading-12 uppercase font-semibold md:text-[76px] md:leading-[76px] max-w-[700px];
+}

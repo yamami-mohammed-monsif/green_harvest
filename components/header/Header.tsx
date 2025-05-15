@@ -8,7 +8,7 @@ import { useState } from "react";
 const Header = () => {
   const [IsOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-neutral-green p-4 md:p-8 lg:px-[100px] flex items-center justify-between">
+    <header className="bg-neutral-green p-4 md:p-8 lg:px-[100px] flex items-center justify-between xl:absolute xl:top-0 xl:left-0 xl:w-full xl:bg-transparent xl:z-10">
       <div>
         <picture>
           <source

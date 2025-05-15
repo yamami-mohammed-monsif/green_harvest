@@ -15,7 +15,7 @@ const DesktopNav = () => {
           </Link>
         );
       })}
-      <button className="uppercase ml-5 bg-primary text-white py-4 px-8 rounded-4xl cursor-pointer hover:bg-transparent hover:scale-110 hover:outline transition-all duration-300">
+      <button className="uppercase ml-5 bg-primary text-white py-4 px-8 rounded-4xl cursor-pointer hover:scale-110 transition-all duration-300">
         shop now
       </button>
     </nav>

@@ -1,7 +1,7 @@
 import { NavLinks } from "@/constants";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
-import { MotionProvider } from "../utils/MotionProvider";
+import { AnimatePresence } from "motion/react";
+import { motion, MotionProvider } from "../utils/MotionProvider";
 import {
   sidebar,
   menuVariants,
@@ -19,7 +19,7 @@ const MobileNav = ({ isOpen, setIsOpen }: MobileNavProps) => {
       <AnimatePresence>
         {isOpen && (
           <>
-            {/* Expanding circle - now responsive */}
+            {/* Expanding circle */}
             <motion.div
               variants={sidebar}
               initial="closed"

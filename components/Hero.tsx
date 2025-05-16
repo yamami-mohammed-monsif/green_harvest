@@ -10,7 +10,7 @@ const Hero = () => {
           <h1>organic vegetables to your diet today!</h1>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="font-medium text-sm leading-[18px] md:text-base md:leading-[20px] max-w-[650px]">
+          <p className="description max-w-[650px]">
             Our expertly curated vegetable baskets are made with the freshest,
             highest quality vegetables available. Fresh Harvest Box has got you
             covered. Fresh, high-quality vegetables in expertly curated

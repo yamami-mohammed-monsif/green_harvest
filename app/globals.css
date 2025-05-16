@@ -14,6 +14,7 @@
   --color-neutral-white: hsla(0, 0%, 98%, 1);
   --color-neutral-green: hsla(85, 35%, 32%, 1);
   --color-neutral-dark: hsla(0, 0%, 8%, 1);
+  --color-border: hsl(344, 20%, 79%);
 }
 
 body {
@@ -22,4 +23,20 @@ body {
 
 h1 {
   @apply text-5xl leading-12 uppercase font-semibold md:text-[76px] md:leading-[76px] max-w-[700px];
+}
+
+.list-number {
+  @apply w-[42px] h-[42px] bg-primary text-white text-xl leading-5 font-semibold flex items-center justify-center rounded-full border-[5px] border-border flex-shrink-0;
+}
+
+.description {
+  @apply font-medium text-sm leading-[18px] md:text-base md:leading-[20px];
+}
+
+.light-span {
+  @apply opacity-30;
+}
+
+.bold-span {
+  @apply font-bold;
 }

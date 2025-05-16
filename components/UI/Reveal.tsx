@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, MotionProvider } from "../utils/MotionProvider";
 import { useEffect, useRef, useState } from "react";
 

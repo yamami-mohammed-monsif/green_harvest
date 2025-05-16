@@ -10,6 +10,10 @@ const Advertisement = dynamic(() => import("@/components/Advertisement"), {
   ssr: true,
 });
 
+const Vegetables = dynamic(() => import("@/components/Vegetables"), {
+  ssr: true,
+});
+
 export default function Home() {
   return (
     <>
@@ -17,6 +21,7 @@ export default function Home() {
       <Hero />
       <HowItWorks />
       <Advertisement />
+      <Vegetables />
     </>
   );
 }

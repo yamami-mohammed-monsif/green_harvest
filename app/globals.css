@@ -17,8 +17,13 @@
   --color-border: hsl(344, 20%, 79%);
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
   font-family: "Inter Tight", sans-serif;
+  color: var(--color-neutral-dark);
 }
 
 h1 {

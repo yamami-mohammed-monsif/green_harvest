@@ -6,12 +6,17 @@ const HowItWorks = dynamic(() => import("@/components/HowItWorks"), {
   ssr: true,
 });
 
+const Advertisement = dynamic(() => import("@/components/Advertisement"), {
+  ssr: true,
+});
+
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
       <HowItWorks />
+      <Advertisement />
     </>
   );
 }

@@ -17,7 +17,7 @@ const Vegetables = () => {
             </h2>
           </Reveal>
           <Reveal>
-            <p className="description">
+            <p className="description text-neutral-white">
               Our organic vegetables are hand-picked from local farms and
               delivered straight to your doorstep, ensuring that you get the
               freshest and most nutritious produce possible.
@@ -30,7 +30,7 @@ const Vegetables = () => {
             initial="closed"
             whileInView="open"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"
+            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-y-7"
           >
             {VegetablesList.map((item) => {
               return (

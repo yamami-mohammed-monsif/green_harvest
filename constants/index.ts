@@ -54,3 +54,27 @@ export const Vegetables = [
     image: "/images/carrots.webp",
   },
 ];
+
+export const Reviews = [
+  {
+    id: 1,
+    name: "John Wax",
+    image: "/images/John-Wax.png",
+    review:
+      "These vegetables are my secret to delicious and healthy meals. The quality is always at the highest level, the aroma and taste are enchanting. I advise every fan of real products!",
+  },
+  {
+    id: 2,
+    name: "Victoria Romashenko",
+    image: "/images/Victoria-Romashenko.png",
+    review:
+      "I love how fast and fresh the vegetables are delivered. Salads always turn out so appetizing, and soups are real masterpieces. The quality is impeccable!",
+  },
+  {
+    id: 3,
+    name: "Ihor Trachuk",
+    image: "/images/Ihor-Trachuk.png",
+    review:
+      "Recently tried my fresh tomatoes and peppers - amazing! The authenticity of the taste, as if from the garden directly to my table. It is now my main vegetable supplier.",
+  },
+];

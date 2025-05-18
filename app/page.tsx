@@ -18,6 +18,10 @@ const Reviews = dynamic(() => import("@/components/Reviews"), {
   ssr: true,
 });
 
+const Order = dynamic(() => import("@/components/Order"), {
+  ssr: true,
+});
+
 export default function Home() {
   return (
     <>
@@ -27,6 +31,7 @@ export default function Home() {
       <Advertisement />
       <Vegetables />
       <Reviews />
+      <Order />
     </>
   );
 }

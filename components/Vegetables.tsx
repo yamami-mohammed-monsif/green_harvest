@@ -10,7 +10,7 @@ const Vegetables = () => {
   return (
     <Section id="vegetables" className="bg-primary">
       <div>
-        <div className="flex flex-col gap-6 md:gap-12 xl:gap-6 mb-10 md:mb-[50px]">
+        <div className="flex flex-col gap-6 md:gap-12 xl:gap-6 mb-10 md:mb-[50px] max-w-[626px]">
           <Reveal>
             <h2 className="text-neutral-white">
               organic <span className="light-span">vegetables</span>{" "}

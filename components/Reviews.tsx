@@ -39,7 +39,7 @@ const Reviews = () => {
                   key={item.id}
                   className={`text-center border border-primary/30 rounded-3xl py-5 px-4 ${
                     index === 2 && "hidden lg:block"
-                  }`}
+                  } ${index === 1 && "hidden md:block"}`}
                 >
                   <img src={item.image} alt="" className="mx-auto mb-6" />
                   <p className="font-semibold text-base leading-5 md:text-[18px] md:leading-3 mb-2">

@@ -22,6 +22,10 @@ const Order = dynamic(() => import("@/components/Order"), {
   ssr: true,
 });
 
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: true,
+});
+
 export default function Home() {
   return (
     <>
@@ -32,6 +36,7 @@ export default function Home() {
       <Vegetables />
       <Reviews />
       <Order />
+      <Footer />
     </>
   );
 }

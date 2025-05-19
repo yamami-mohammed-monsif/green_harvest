@@ -3,7 +3,7 @@ import Reveal from "./UI/Reveal";
 const Hero = () => {
   return (
     <section className="relative bg-neutral-green text-neutral-white flex flex-col gap-10 md:gap-[50px] xl:flex-row xl:pt-[120px] xl:h-screen">
-      <div className="p-4 md:p-8 lg:pl-[100px] flex flex-col gap-5 md:gap-6 xl:gap-[128px] xl:mt-[100px] xl:max-w-[650px]">
+      <div className="p-4 md:p-8 lg:pl-[100px] flex flex-col gap-5 md:gap-6 xl:gap-[128px] xl:mt-[60px] xl:max-w-[650px] border">
         <Reveal>
           <h1>organic vegetables to your diet today!</h1>
         </Reveal>

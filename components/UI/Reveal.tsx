@@ -36,7 +36,7 @@ const Reveal = ({ children, delay = 0, threshold = 0.1 }: Props) => {
 
   return (
     <MotionProvider>
-      <div ref={ref} className="w-full">
+      <div ref={ref} className="w-full border">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={isInView ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}

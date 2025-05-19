@@ -31,7 +31,7 @@ const Order = () => {
         <MotionProvider>
           <motion.div
             variants={menuVariants}
-            initial="closed"
+            initial="false"
             whileInView="open"
             viewport={{ once: true }}
             className="grid gap-5 md:gap-6 xl:grid-cols-2 xl:items-center"
@@ -58,7 +58,7 @@ const Order = () => {
                 <p className="text-sm leading-[18px] opacity-50 md:text-[18px] md:leading-5">
                   Follow us on our social networks:
                 </p>
-                <div className="text-2xl leading-[26px] font-semibold md:text-[32px] md:leading-8 flex items-center gap-3">
+                <div className="text-2xl leading-[26px] font-semibold md:text-[32px] md:leading-8 flex flex-wrap items-center gap-3">
                   <Link href="instagram" className="hover:opacity-50">
                     instagram
                   </Link>

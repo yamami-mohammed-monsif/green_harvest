@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Notifications from "./UI/Notifications";
 import LoadingSpinner from "./UI/LoadingSpinner";
 

@@ -16,7 +16,7 @@ A modern, responsive landing page for a fresh produce delivery service built wit
 
 ## Demo
 
-Live demo: [Green Harvest](#)
+Live demo: [Green Harvest](https://green-harvest-tau.vercel.app/)
 
 ## Features
 
@@ -51,7 +51,7 @@ Live demo: [Green Harvest](#)
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/green_harvest.git
+   git clone https://github.com/yamami-mohammed-monsif/green_harvest.git
    cd green_harvest
    ```
 

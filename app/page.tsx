@@ -1,30 +1,8 @@
 import dynamic from "next/dynamic";
 import Header from "@/components/header/Header";
 import Hero from "@/components/Hero";
-
-const HowItWorks = dynamic(() => import("@/components/HowItWorks"), {
-  ssr: true,
-});
-
-const Advertisement = dynamic(() => import("@/components/Advertisement"), {
-  ssr: true,
-});
-
-const Vegetables = dynamic(() => import("@/components/Vegetables"), {
-  ssr: true,
-});
-
-const Reviews = dynamic(() => import("@/components/Reviews"), {
-  ssr: true,
-});
-
-const Order = dynamic(() => import("@/components/Order"), {
-  ssr: true,
-});
-
-const Footer = dynamic(() => import("@/components/Footer"), {
-  ssr: true,
-});
+import HowItWorks from "@/components/HowItWorks";
+import ClientSections from "./ClientSectoins";
 
 export default function Home() {
   return (
@@ -32,11 +10,7 @@ export default function Home() {
       <Header />
       <Hero />
       <HowItWorks />
-      <Advertisement />
-      <Vegetables />
-      <Reviews />
-      <Order />
-      <Footer />
+      <ClientSections />
     </>
   );
 }

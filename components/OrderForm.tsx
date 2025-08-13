@@ -75,67 +75,77 @@ const Form = () => {
   };
 
   // Form submission handler
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   setShowNotification(false);
+
+  //   try {
+  //     // Basic validation
+  //     if (
+  //       !formData.name.trim() ||
+  //       !formData.email.trim() ||
+  //       !formData.comment.trim()
+  //     ) {
+  //       showMessage("Please fill in all fields", "error");
+  //       setLoading(false);
+  //       return;
+  //     }
+
+  //     // Email validation
+  //     if (!formData.email.includes("@")) {
+  //       showMessage("Please enter a valid email address", "error");
+  //       setLoading(false);
+  //       return;
+  //     }
+
+  //     // Create FormData object
+  //     const formDataToSubmit = new FormData();
+  //     formDataToSubmit.append("name", formData.name);
+  //     formDataToSubmit.append("email", formData.email);
+  //     formDataToSubmit.append("comment", formData.comment);
+  //     formDataToSubmit.append(
+  //       "access_key",
+  //       process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ""
+  //     );
+
+  //     // Send form data to web3forms
+  //     const response = await fetch("https://api.web3forms.com/submit", {
+  //       method: "POST",
+  //       body: formDataToSubmit,
+  //     });
+
+  //     const data = await response.json();
+
+  //     if (data.success) {
+  //       showMessage(
+  //         "Message sent successfully! We'll get back to you soon.",
+  //         "success"
+  //       );
+  //       // Reset form
+  //       setFormData({ name: "", email: "", comment: "" });
+  //     } else {
+  //       showMessage(
+  //         data.message || "Failed to send message. Please try again.",
+  //         "error"
+  //       );
+  //     }
+  //   } catch (error) {
+  //     console.error("Form submission error:", error);
+  //     showMessage("An unexpected error occurred. Please try again.", "error");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+  // Form submission handler (demo mode)
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
-    setShowNotification(false);
-
-    try {
-      // Basic validation
-      if (
-        !formData.name.trim() ||
-        !formData.email.trim() ||
-        !formData.comment.trim()
-      ) {
-        showMessage("Please fill in all fields", "error");
-        setLoading(false);
-        return;
-      }
-
-      // Email validation
-      if (!formData.email.includes("@")) {
-        showMessage("Please enter a valid email address", "error");
-        setLoading(false);
-        return;
-      }
-
-      // Create FormData object
-      const formDataToSubmit = new FormData();
-      formDataToSubmit.append("name", formData.name);
-      formDataToSubmit.append("email", formData.email);
-      formDataToSubmit.append("comment", formData.comment);
-      formDataToSubmit.append(
-        "access_key",
-        process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ""
-      );
-
-      // Send form data to web3forms
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formDataToSubmit,
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        showMessage(
-          "Message sent successfully! We'll get back to you soon.",
-          "success"
-        );
-        // Reset form
-        setFormData({ name: "", email: "", comment: "" });
-      } else {
-        showMessage(
-          data.message || "Failed to send message. Please try again.",
-          "error"
-        );
-      }
-    } catch (error) {
-      console.error("Form submission error:", error);
-      showMessage("An unexpected error occurred. Please try again.", "error");
-    } finally {
-      setLoading(false);
-    }
+    showMessage(
+      "Demo only: This form does not save or send your data.",
+      "success"
+    );
+    setFormData({ name: "", email: "", comment: "" });
   };
 
   return (
